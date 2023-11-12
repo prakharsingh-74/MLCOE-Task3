@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="{{url_for('static', filename='mlcoe.png')}}"/>
+    <form action="http://localhost:5000/formlogin" method="post">
+        <table>
+            <tr><td>name</td>
+            <td><input type="text" name="userName"></td></tr>
+            <tr><td>Password</td>
+            <td><input type="password" name="password"></td></tr>
+            <tr><td><input type="submit"></td></tr>        
+        </table>
+    </form>
+</body>
+</html>
