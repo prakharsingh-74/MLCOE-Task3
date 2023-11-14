@@ -3,10 +3,6 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 
 @app.route("/")
-def hello_world():
-    return "<p>Hello, World!</p>"
-
-@app.route("/loginPage")
 def renderLogin():
     return render_template("form.html")
 
