@@ -11,9 +11,11 @@ def login():
     userName = request.form["userName"]
     password = request.form["password"]
     if userName == 'prakhar' and password == '123':
-        return "<p>Authentication successfull redirecting towards Face recognition</p>"
+        return "redirecting towards face recognition"        
     else:
         return "Invalid User Name or Password"
+
+@app.route("/face.py", methods)
 
 @app.route("/final")
 def renderfinal():
